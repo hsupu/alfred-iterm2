@@ -9,7 +9,16 @@
 ```applescript
 on alfred_script(q)
 
--- set q to "ls" -- for debugtell application "System Events"	tell application "iTerm"		activate		set frontmost to true	end tell	keystroke "n" using {command down}	keystroke q	keystroke returnend tell
+-- set q to "ls" -- for debug
+tell application "System Events"
+    tell application "iTerm2"
+    		create window with default profile
+		delay 0.5
+		tell current session of current window
+			write text q
+		end tell
+	end tell
+end tell
 
 end alfred_script
 ```
