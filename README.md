@@ -9,15 +9,16 @@
 ```applescript
 on alfred_script(q)
 
--- set q to "ls" -- for debug
+-- for debug
+-- set q to "ls"
 tell application "System Events"
     tell application "iTerm2"
-    		create window with default profile
-		delay 0.5
-		tell current session of current window
-			write text q
-		end tell
-	end tell
+        create window with default profile
+        delay 0.5
+        tell current session of current window
+            write text q
+        end tell
+    end tell
 end tell
 
 end alfred_script
