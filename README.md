@@ -3,7 +3,7 @@
 ## Guide
 
 1. Open `Alfred Preferences` - `Features` - `Terminal / Shell`.
-2. Change `Application` to `Customer`.
+2. Change `Application` to `Custom`.
 3. Use script as follow:
 
 ```applescript
